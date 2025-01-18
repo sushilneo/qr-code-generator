@@ -1,1 +1,1 @@
-This python program generates QR code of the website you provide as an input.
+This is a normal program that generates QR code of any website you provide.
