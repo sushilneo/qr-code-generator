@@ -1,0 +1,144 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #6a11cb, #2575fc, #00bcd4, #8e44ad);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the whole content */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Heading */
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-section input {
+    padding: 12px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.4);
+}
+
+.input-section button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #2575fc;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #1f5bb8;
+    transform: translateY(-2px);
+}
+
+.input-section button:active {
+    transform: translateY(2px);
+}
+
+/* QR Code Container */
+.qr-code-container {
+    display: none;
+    margin-top: 30px;
+}
+
+#qr-code {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f7fc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#download-btn {
+    padding: 12px 20px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#download-btn:hover {
+    background-color: #00a5b2;
+    transform: translateY(-2px);
+}
+
+#download-btn:active {
+    transform: translateY(2px);
+}
+
+/* Animations */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
